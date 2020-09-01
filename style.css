@@ -413,8 +413,6 @@ ul {
   margin: 1rem 1rem 0 0;
 }
 
- 
-
 .bio {
   display: flex;
   justify-content: space-around;
@@ -462,12 +460,26 @@ ul {
   justify-content: center;
   width: 100%;
   margin-top: 2rem;
+  /* color: darkgray; */
+}
+
+.flex-icons p {
+  color:darkgray;
+  /* letter-spacing: 0.1rem; */
+  text-decoration: none;
+  font-family: futura;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+  /* text-align: center; */
+  /* margin: 1rem 1rem 0 0; */
 }
 
 .flex-icons >*{
   font-size: 3rem;
   padding:1rem;
   color: darkgrey;
+  text-align: center;
 }
 
 .bio-browser {
@@ -517,11 +529,15 @@ ul {
   padding: 0 1rem 0 1rem;
 }
 
-.bio-bottom p {
-  line-height: 125%;
+.bio-bottom a {
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+  
 }
 
-.bio p {
+.bio-bottom p {
+  line-height: 125%;
   font-family: futura;
   font-weight: 300;
   font-style: italic;
