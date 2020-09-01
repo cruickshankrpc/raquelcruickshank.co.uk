@@ -514,6 +514,11 @@ ul {
   border-bottom: solid 2px lightcoral;
 }
 
+#top {
+  margin-top: 0.5rem;
+
+}
+
 .c {
   display: flex;
   justify-content: flex-start;
@@ -527,6 +532,7 @@ ul {
 
 .bio-bottom {
   padding: 0 1rem 0 1rem;
+  /* height: 80%; */
 }
 
 .bio-bottom a {
