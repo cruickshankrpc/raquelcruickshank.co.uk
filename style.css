@@ -365,6 +365,7 @@ html {
 
 body {
   margin: 5rem;
+  /* background-color: black; */
 }
 
 .hero {
@@ -420,8 +421,6 @@ ul {
   width: 100%;
 }
 
-
-
 .bio h5 {
   font-family: futura;
   font-weight: 300;
@@ -430,7 +429,6 @@ ul {
   color: red;
   letter-spacing: 0.1rem;
 }
-
 
 .bio-left {
   display: flex;
