@@ -451,7 +451,6 @@ ul {
 
 }
 
-
 .flex-icons {
   display: flex;
   flex-wrap: wrap;
@@ -583,6 +582,7 @@ ul {
   border: solid 2px lightcoral;
   border-radius: 1.5rem;
   margin-bottom: 2.5rem;
+  margin: 2rem;
 }
 
 .card {
