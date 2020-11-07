@@ -21,17 +21,19 @@ a {
 
 /* Nav Bar */
 
-.title {
-  margin: 1rem 0 2rem 0;
+#title {
+  margin: 1rem 0 2.5rem 0;
   text-align: center;
 }
+
 nav {
   margin-bottom: 2rem;
 }
 
 nav a {
-  font-size: .9rem;
+  font-size: 1rem;
   color: #fff;
+  margin: 0 2rem;
 }
 
 .contact {
@@ -39,15 +41,17 @@ nav a {
   top:50px;
   left:10px;
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.contact:hover {
 
 }
 
 .information {
-    position: absolute;
-    top:50px;
-    right:10px;
-    font-family: 'IBM Plex Sans', sans-serif;
-
+  position: absolute;
+  top:50px;
+  right:10px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .brand {
@@ -59,7 +63,6 @@ nav a {
   text-align: center;
 }
 
-
 #chinese {
   font-family: 'Ma Shan Zheng', cursive;
   font-size: 2.5rem;
@@ -69,23 +72,13 @@ nav a {
 
 /* PROJECTS */
 
-/* .projects h1 {
-  font-family: futura;
-  font-style: italic;
-  color: red;
-  font-size: 4rem;
-} */
-
 .proj-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 2rem;
 }
-
-/* .proj-container >* {
-  flex: 1 1 300px;
-} */
 
 .proj-browser, .bio-browser {
   display: flex;
@@ -133,7 +126,8 @@ nav a {
   justify-content: flex-start;
   width: 0.8rem;
   height: 0.8rem;
-  border: solid 2px lightcoral;
+  /* border: solid 2px lightcoral; */
+  border: solid 2px #dc3545;
   border-radius: 50%;
   margin-left: 0.5rem;
   margin-top: 0.1rem;
@@ -201,12 +195,8 @@ nav a {
 
 .content-details p {
   color: white;
-  /* font-family: futura; */
-  font-family: 'Helvetica Neue', sans-serif;
-  font-family: 'IBM Plex Sans', sans-serif;
-
+  font-family: 'IBM Plex Sans','Helvetica Neue', sans-serif;
   font-weight: 300;
-  /* font-style: italic; */
   letter-spacing: 0.03em;
 }
 
