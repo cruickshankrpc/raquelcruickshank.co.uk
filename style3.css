@@ -4,13 +4,14 @@
 body {
   margin: 0;
   width: 100%;
-  background-color: #000;
+  background-color: rgb(245, 229, 199);
+  /* background-color: #FAEED1; */
   /* background-color: #1A39CF; */
   /* background-color:#002fa7; */
   /* background-color: #012FFF; */
-  /* background-color: #fff; */
+  /* background-color: #000; */
   /* background-color: #6322FF; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 a {
@@ -24,53 +25,59 @@ a {
 /* Nav Bar */
 
 #title {
-  margin: 1rem 0 2.5rem 0;
-  text-align: center;
+  margin: 2rem 1rem 2.5rem 1rem;
 }
 
-nav {
-  margin-bottom: 2rem;
-}
 
 nav a {
   font-size: 1rem;
-  color: #fff;
+  color: #FE3200;
   margin: 0 2rem;
 }
 
-.contact {
-  position: absolute;
-  top:50px;
-  left:10px;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
 
-
-.information {
-  position: absolute;
-  top:50px;
-  right:10px;
-  font-family: 'IBM Plex Sans', sans-serif;
+#red {
+  color: #FE3200;
 }
 
 .brand {
-  font-family: 'Oswald', 'Helvetica Neue', Roboto, Arial, sans-serif;
-  /* font-family: 'Archivo', sans-serif; */
-  /* font-family: 'nimbus-sans-l'; */
-  /* color: #FE3200; */
-  font-weight: 900;
+  /* font-family: 'Oswald', 'Helvetica Neue', Roboto, Arial, sans-serif; */
+  /* font-family: Roboto, Arial, Helvetica, sans-serif; */
+  color: #FE3200;
+  font-weight: 300;
   font-style: italic;
-  letter-spacing: 0.2rem;
-  font-size: 2.5rem;
-  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.brand img {
+  width: 3.5rem;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #FE3200;
+  letter-spacing: 0.08rem;
+  /* line-height: 1; */
 }
 
 #chinese {
-  font-family: 'Ma Shan Zheng', cursive;
+  /* font-family: 'Ma Shan Zheng', cursive;
   font-size: 2.5rem;
   line-height: 2rem;
-  color: white;
+  color: #FE3200; */
 }
+
+#dev {
+  font-size: 1rem;
+  margin-left: 5%;
+  color: #FE3200;
+}
+
 
 /* PROJECTS */
 
@@ -82,6 +89,7 @@ nav a {
   padding: 2rem;
 }
 
+
 .proj-browser, .bio-browser {
   display: flex;
   justify-content: center;
@@ -89,7 +97,7 @@ nav a {
   width: 525px;
   height: 375px;
   /* border: solid 2px lightcoral; */
-  border: solid 2px #dc3545;
+  border: solid 2px #FE3200;
   /* border: solid 2px#FE3200; */
   border-radius: 1.5rem;
   margin-bottom: 2.5rem;
@@ -101,15 +109,15 @@ nav a {
   max-height: 100%;
   display: block;
   /* border: solid 2px lightcoral; */
-  border: solid 2px #dc3545;
+  border: solid 2px #FE3200;
 }
 
 .proj-top {
   display: flex;
   /* border-bottom: solid 2px lightcoral; */
-  border-bottom: solid 2px #dc3545;
+  border-bottom: solid 2px #FE3200;
   height: 20px;
-  background-color: black;
+  background-color: rgb(245, 229, 199);
 }
 
 .proj-bottom {
@@ -130,7 +138,7 @@ nav a {
   width: 0.8rem;
   height: 0.8rem;
   /* border: solid 2px lightcoral; */
-  border: solid 2px #dc3545;
+  border: solid 2px#FE3200;
   border-radius: 50%;
   margin-left: 0.5rem;
   margin-top: 0.1rem;
