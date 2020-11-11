@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* .noHover{
   pointer-events: none;
 } */
@@ -40,6 +44,7 @@ nav a {
 #red {
   color: #FE3200;
 }
+
 
 .brand {
   /* font-family: 'Oswald', 'Helvetica Neue', Roboto, Arial, sans-serif; */
@@ -67,9 +72,38 @@ nav a {
   /* line-height: 1; */
 }
 
-.nav-link a:hover {
-  color:  rgba(0, 0, 255, .2);
+/* #contact:hover {
+  border-bottom: solid 4px rgba(0, 0, 255, .2);
+  transition: ease-in-out 0.2s;
+} */
+
+#underline {
+  color: #FE3200;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 2.5px;
+  position: relative;
 }
+
+#underline:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #FE3200;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+}
+
+#underline:hover:after { 
+  width: 100%; 
+}
+
 
 /* .nav-link a {
   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%,blue 50%);
@@ -245,13 +279,17 @@ nav a {
 
 .content-details p {
   color: white;
-  font-family: 'Futura','Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 200;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
 
 .content-details span {
   font-weight: bold;
+}
+
+.content-details a {
+  font-size: 1.25rem;
 }
 
 /*** CONTACT ***/
@@ -325,6 +363,10 @@ nav a {
 
 /* BIO */
 
+#bio {
+  padding: 0 5%;
+}
+
 .bio-right {
   display: flex;
   flex-direction: column;
@@ -334,7 +376,6 @@ nav a {
 
 .bio-right p {
   font-family: Roboto, sans-serif;
-  /* color: #FE3200; */
   color: #FE3200;
   letter-spacing: 0.1rem;
   line-height: 2;
