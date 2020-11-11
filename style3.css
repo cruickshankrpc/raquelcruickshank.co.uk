@@ -12,6 +12,8 @@ body {
   /* background-color: #000; */
   /* background-color: #6322FF; */
   /* text-align: center; */
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  font-family: Helvetica Neue, Roboto, Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -22,19 +24,18 @@ a {
   pointer-events: none;
 } */
 
-/* Nav Bar */
+/*** Nav Bar ***/
 
-#title {
-  margin: 2rem 1rem 2.5rem 1rem;
+.fixed-top {
+  top: 1.5rem;
 }
-
 
 nav a {
   font-size: 1rem;
   color: #FE3200;
   margin: 0 2rem;
+  font-weight: 400;
 }
-
 
 #red {
   color: #FE3200;
@@ -42,13 +43,14 @@ nav a {
 
 .brand {
   /* font-family: 'Oswald', 'Helvetica Neue', Roboto, Arial, sans-serif; */
-  /* font-family: Roboto, Arial, Helvetica, sans-serif; */
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #FE3200;
-  font-weight: 300;
+  font-weight: bold;
   font-style: italic;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   line-height: 1;
+  margin: 4%;
 }
 
 .brand img {
@@ -57,13 +59,32 @@ nav a {
 }
 
 .nav-link {
-  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
   text-transform: uppercase;
   font-style: italic;
   color: #FE3200;
   letter-spacing: 0.08rem;
   /* line-height: 1; */
 }
+
+.nav-link a:hover {
+  color:  rgba(0, 0, 255, .2);
+}
+
+/* .nav-link a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%,blue 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  font-size: 1.75em;
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.nav-link a:hover {
+  background-position: -99.99% 0;
+} */
 
 #chinese {
   /* font-family: 'Ma Shan Zheng', cursive;
@@ -76,10 +97,26 @@ nav a {
   font-size: 1rem;
   margin-left: 5%;
   color: #FE3200;
+  font-weight: 300;
 }
 
 
-/* PROJECTS */
+/*** PROJECTS ***/
+
+/* #projects {
+  margin: 8% 0 10%;
+} */
+
+.side {
+  color: #FE3200;
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+  margin: 40rem 2.5rem 2rem;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #FE3200;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
 
 .proj-container {
   width: 100%;
@@ -89,8 +126,9 @@ nav a {
   padding: 2rem;
 }
 
+/*** PROJECT CARDS ***/
 
-.proj-browser, .bio-browser {
+.proj-browser {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +140,7 @@ nav a {
   border-radius: 1.5rem;
   margin-bottom: 2.5rem;
   margin: 2rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.098);
 }
 
 .card {
@@ -206,17 +245,19 @@ nav a {
 
 .content-details p {
   color: white;
-  /* font-family: 'IBM Plex Sans','Helvetica Neue', sans-serif; */
-  font-family: 'nimbus sans l';
-  font-weight: 300;
+  font-family: 'Futura','Helvetica Neue', sans-serif;
+  font-weight: 200;
   letter-spacing: 0.03em;
 }
 
 .content-details span {
   font-weight: bold;
 }
+
+/*** CONTACT ***/
+
 .contact-icons {
-  margin-top: 3rem;
+  margin: 5% 0 5%;
   text-align:center;
 }
 
@@ -225,6 +266,10 @@ nav a {
   font-size: 3rem;
   text-decoration: none;
   margin: 1rem;
+}
+
+.contact-icons a:hover{
+  color:  rgba(0, 0, 255, .2);
 }
 
 @media only screen and (max-width: 600px){
@@ -236,5 +281,73 @@ nav a {
   }
 }
 
+/*** ABOUT ***/
 
+.bio-left {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 2rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.flex-icons p {
+  color:darkgray;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.flex-icons >*{
+  font-size: 3rem;
+  padding:1rem;
+  color: darkgrey;
+  text-align: center;
+}
+
+.flex-icons span:hover {
+  color:  rgba(0, 0, 255, .2);
+}
+
+/* BIO */
+
+.bio-right {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+}
+
+.bio-right p {
+  font-family: Roboto, sans-serif;
+  /* color: #FE3200; */
+  color: #FE3200;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+}
+
+.about {
+  /* background-color:  rgba(0, 0, 255, .2); */
+  background-color: rgba(245, 222, 179, 0.584);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+/* .bio-contact {
+  margin-top: 5rem;
+} */
 
